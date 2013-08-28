@@ -38,10 +38,8 @@ NOCONFIGURE=1 ./autogen.sh
 %install
 %makeinstall_std INSTALL='install -p'
 
-find ${RPM_BUILD_ROOT} -type f -name "*.la" -exec rm -f {} ';'
-
-mkdir -p $RPM_BUILD_ROOT/%{_sysconfdir}/samba/
-cp %{SOURCE2} $RPM_BUILD_ROOT/%{_sysconfdir}/samba/
+mkdir -p %{buildroot}/%{_sysconfdir}/samba/
+cp %{SOURCE2} %{buildroot}/%{_sysconfdir}/samba/
 
 %find_lang %{oname}
 
