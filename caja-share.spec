@@ -1,22 +1,23 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 %define oname   mate-file-manager-share
 
-Name:				caja-share
-Version:			1.6.0
-Release:			1
-Summary:			Easy sharing folder via Samba (CIFS protocol)
-Group:				Networking/File transfer
-License:			GPLv2+
-URL:				http://pub.mate-desktop.org
-Source0:            http://pub.mate-desktop.org/releases/%{url_ver}/%{oname}-%{version}.tar.xz
-Source1:			caja-share-setup-instructions
-Source2:			caja-share-smb.conf.example
+Name:		caja-share
+Version:	1.6.0
+Release:	2
+Summary:	Easy sharing folder via Samba (CIFS protocol)
+Group:		Networking/File transfer
+License:	GPLv2+
+URL:		http://pub.mate-desktop.org
+Source0:        http://pub.mate-desktop.org/releases/%{url_ver}/%{oname}-%{version}.tar.xz
+Source1:	caja-share-setup-instructions
+Source2:	caja-share-smb.conf.example
 
-BuildRequires:      pkgconfig(libcaja-extension)
-BuildRequires:		mate-common
+BuildRequires:  pkgconfig(libcaja-extension)
+BuildRequires:	mate-common
 
-Requires:			samba
-Provides:           %{oname}-share = %{version}-%{release}
+Requires:	samba
+
+%rename %{oname}
 
 %description
 Caja extension designed for easier folders 
