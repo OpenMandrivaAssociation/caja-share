@@ -7,7 +7,7 @@ Release:	2
 Summary:	Easy sharing folder via Samba (CIFS protocol)
 Group:		Networking/File transfer
 License:	GPLv2+
-URL:		http://pub.mate-desktop.org
+URL:		https://pub.mate-desktop.org
 Source0:        http://pub.mate-desktop.org/releases/%{url_ver}/%{oname}-%{version}.tar.xz
 Source1:	caja-share-setup-instructions
 Source2:	caja-share-smb.conf.example
