@@ -12,6 +12,11 @@ Source0:        http://pub.mate-desktop.org/releases/%{url_ver}/%{oname}-%{versi
 Source1:	caja-share-setup-instructions
 Source2:	caja-share-smb.conf.example
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  pkgconfig(libcaja-extension)
 BuildRequires:	mate-common
 
